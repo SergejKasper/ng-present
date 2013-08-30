@@ -1,0 +1,325 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"left"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"ng-s",
+				"ng-style"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"di",
+				"directive	Angular.js"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"$roo",
+				"$rootScope"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"b",
+				"bdli	border-left-image: url(${0});"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"border-radi",
+				"border-top-right-radius"
+			],
+			[
+				"Crea",
+				"createEvent"
+			],
+			[
+				"sho",
+				"showhide"
+			],
+			[
+				"ng-a",
+				"ng-disabled	AngularJS"
+			],
+			[
+				"ng",
+				"ng-click	AngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/app/junows/revealAngular/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2875,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"h",
+				"HTMLPrettify"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/app/junows/cs/build/lib/bower_components/angular/angular.min.js",
+		"/C/app/junows/cs/build/index.html",
+		"/C/app/junows/cs/Gruntfile.js",
+		"/C/app/junows/cs/build.config.js",
+		"/C/Users/Siggi/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/app/junows/cs/index.html",
+		"/C/app/junows/cs/package.json",
+		"/C/app/junows/wevent/src/less/variables.less",
+		"/C/app/junows/nxclient/src/less/variables.less",
+		"/c/app/junows/wevent/build/index.html",
+		"/c/app/junows/wevent/src/app/shared/activityroute.less",
+		"/c/app/junows/wevent/src/app/about/about.js",
+		"/c/app/junows/wevent/src/app/app.js",
+		"/c/app/junows/wevent/build.config.js",
+		"/c/app/junows/wevent/karma/karma-unit.tpl.js",
+		"/c/app/junows/wevent/vendor/modernizr/modernizr-custom.js",
+		"/C/app/junows/wevent/vendor/modernizr/modernizr-dev.js",
+		"/c/app/junows/wevent/src/app/home/home.less",
+		"/c/app/junows/wevent/src/common/circularMenu/circularMenu.less",
+		"/c/app/junows/wevent/src/common/circularMenu/circularMenu.js",
+		"/C/Users/Siggi/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Siggi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/c/app/junows/wevent/src/common/circularMenu/circularMenu.less.css",
+		"/C/app/junows/wevent/src/common/circularMenu/circularMenu.css",
+		"/c/app/junows/wevent/src/index.html",
+		"/c/app/junows/wevent/vendor/angular-bootstrap/ui-bootstrap-tpls.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 97.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"split",
+			"require",
+			"8000",
+			"800",
+			"animate",
+			"multi",
+			"firefox",
+			"padding",
+			"build",
+			"comp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/app/junows/revealAngular/Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1795,
+								1795
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1223.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "revealAngular.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

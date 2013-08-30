@@ -1,0 +1,22 @@
+<section ng-controller="angularExcampleController" >
+	<section>
+		<h2>Einblick in die {{object}}</h2>
+			<ul>
+				<li ng-repeat="feature in features" 
+                class="fragment highlight-blue">
+                {{feature.headline}}!
+				</li>
+			</ul>
+		<aside class="notes">
+			Zusatzinfos
+		</aside>
+	</section>
+	<section ng-repeat="feature in features">
+		<h2>{{feature.headline}}</h2>
+		<div ng-repeat="img in feature.img">
+			<a ng-href="{{href}}"><img ng-src="{{img}}"/></a>
+		</div>
+		
+		<p>{{feature.conclusion}}</p>
+	</section>
+</section>

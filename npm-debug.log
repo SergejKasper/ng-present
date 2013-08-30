@@ -1,0 +1,142 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\appDevelop\\backend\\node\\\\node.exe',
+1 verbose cli   'C:\\appDevelop\\backend\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.2.17
+3 info using node@v0.10.3
+4 verbose node symlink C:\appDevelop\backend\node\\node.exe
+5 verbose read json C:\app\junows\cs\package.json
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'C:\\app\\junows\\cs',
+7 verbose install   [ 'underscore',
+7 verbose install     'express',
+7 verbose install     'mustache',
+7 verbose install     'socket.io',
+7 verbose install     'grunt-contrib-clean',
+7 verbose install     'grunt-contrib-copy',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-cssmin',
+7 verbose install     'grunt-contrib-uglify',
+7 verbose install     'grunt-contrib-watch',
+7 verbose install     'grunt-contrib-sass',
+7 verbose install     'grunt-contrib-connect',
+7 verbose install     'grunt-zip',
+7 verbose install     'grunt',
+7 verbose install     'grunt-express-server' ] ]
+8 verbose from cache C:\app\junows\cs\package.json
+9 info preinstall cspresentation@2.5.0
+10 verbose read json C:\app\junows\cs\node_modules\express\package.json
+11 verbose read json C:\app\junows\cs\node_modules\grunt\package.json
+12 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-clean\package.json
+13 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-connect\package.json
+14 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-copy\package.json
+15 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-cssmin\package.json
+16 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-jshint\package.json
+17 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-sass\package.json
+18 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-uglify\package.json
+19 verbose read json C:\app\junows\cs\node_modules\grunt-contrib-watch\package.json
+20 verbose read json C:\app\junows\cs\node_modules\grunt-express\package.json
+21 verbose read json C:\app\junows\cs\node_modules\grunt-express-server\package.json
+22 verbose read json C:\app\junows\cs\node_modules\grunt-zip\package.json
+23 verbose read json C:\app\junows\cs\node_modules\mustache\package.json
+24 verbose read json C:\app\junows\cs\node_modules\socket.io\package.json
+25 verbose read json C:\app\junows\cs\node_modules\underscore\package.json
+26 verbose from cache C:\app\junows\cs\package.json
+27 verbose readDependencies using package.json deps
+28 verbose from cache C:\app\junows\cs\node_modules\express\package.json
+29 verbose from cache C:\app\junows\cs\node_modules\grunt\package.json
+30 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-clean\package.json
+31 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-connect\package.json
+32 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-copy\package.json
+33 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-cssmin\package.json
+34 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-jshint\package.json
+35 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-sass\package.json
+36 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-uglify\package.json
+37 verbose from cache C:\app\junows\cs\node_modules\grunt-contrib-watch\package.json
+38 verbose from cache C:\app\junows\cs\node_modules\grunt-express\package.json
+39 verbose from cache C:\app\junows\cs\node_modules\grunt-express-server\package.json
+40 verbose from cache C:\app\junows\cs\node_modules\grunt-zip\package.json
+41 verbose from cache C:\app\junows\cs\node_modules\mustache\package.json
+42 verbose from cache C:\app\junows\cs\node_modules\socket.io\package.json
+43 verbose from cache C:\app\junows\cs\node_modules\underscore\package.json
+44 verbose already installed skipping underscore@~1.3.3 C:\app\junows\cs
+45 verbose already installed skipping express@3.1.x C:\app\junows\cs
+46 verbose already installed skipping mustache@~0.4.0 C:\app\junows\cs
+47 verbose already installed skipping socket.io@~0.9.13 C:\app\junows\cs
+48 verbose already installed skipping grunt-contrib-clean@~0.4.1 C:\app\junows\cs
+49 verbose already installed skipping grunt-contrib-copy@~0.4.1 C:\app\junows\cs
+50 verbose already installed skipping grunt-contrib-jshint@~0.2.0 C:\app\junows\cs
+51 verbose already installed skipping grunt-contrib-cssmin@~0.4.1 C:\app\junows\cs
+52 verbose already installed skipping grunt-contrib-uglify@~0.1.1 C:\app\junows\cs
+53 verbose already installed skipping grunt-contrib-watch@~0.2.0 C:\app\junows\cs
+54 verbose already installed skipping grunt-contrib-sass@~0.2.2 C:\app\junows\cs
+55 verbose already installed skipping grunt-contrib-connect@~0.2.0 C:\app\junows\cs
+56 verbose already installed skipping grunt-zip@~0.7.0 C:\app\junows\cs
+57 verbose already installed skipping grunt@~0.4.0 C:\app\junows\cs
+58 verbose already installed skipping grunt-express-server@~0.4.2 C:\app\junows\cs
+59 silly resolved []
+60 info build C:\app\junows\cs
+61 verbose from cache C:\app\junows\cs\package.json
+62 verbose linkStuff [ false, false, false, 'C:\\app\\junows' ]
+63 info linkStuff cspresentation@2.5.0
+64 verbose linkBins cspresentation@2.5.0
+65 verbose linkMans cspresentation@2.5.0
+66 verbose rebuildBundles cspresentation@2.5.0
+67 verbose rebuildBundles [ '.bin',
+67 verbose rebuildBundles   'express',
+67 verbose rebuildBundles   'grunt',
+67 verbose rebuildBundles   'grunt-contrib-clean',
+67 verbose rebuildBundles   'grunt-contrib-connect',
+67 verbose rebuildBundles   'grunt-contrib-copy',
+67 verbose rebuildBundles   'grunt-contrib-cssmin',
+67 verbose rebuildBundles   'grunt-contrib-jshint',
+67 verbose rebuildBundles   'grunt-contrib-sass',
+67 verbose rebuildBundles   'grunt-contrib-uglify',
+67 verbose rebuildBundles   'grunt-contrib-watch',
+67 verbose rebuildBundles   'grunt-express',
+67 verbose rebuildBundles   'grunt-express-server',
+67 verbose rebuildBundles   'grunt-zip',
+67 verbose rebuildBundles   'mustache',
+67 verbose rebuildBundles   'socket.io',
+67 verbose rebuildBundles   'underscore' ]
+68 verbose rebuild bundle C:\app\junows\cs\node_modules\grunt-express
+69 info build C:\app\junows\cs\node_modules\grunt-express
+70 verbose from cache C:\app\junows\cs\node_modules\grunt-express\package.json
+71 info preinstall grunt-express@1.0.0-beta2
+72 verbose linkStuff [ false, false, false, 'C:\\app\\junows\\cs\\node_modules' ]
+73 info linkStuff grunt-express@1.0.0-beta2
+74 verbose linkBins grunt-express@1.0.0-beta2
+75 verbose linkMans grunt-express@1.0.0-beta2
+76 verbose rebuildBundles grunt-express@1.0.0-beta2
+77 verbose rebuildBundles [ '.bin',
+77 verbose rebuildBundles   'connect',
+77 verbose rebuildBundles   'connect-livereload',
+77 verbose rebuildBundles   'grunt-contrib-watch',
+77 verbose rebuildBundles   'lodash',
+77 verbose rebuildBundles   'temp',
+77 verbose rebuildBundles   'touch' ]
+78 info install grunt-express@1.0.0-beta2
+79 info postinstall grunt-express@1.0.0-beta2
+80 info install cspresentation@2.5.0
+81 info postinstall cspresentation@2.5.0
+82 verbose unsafe-perm in lifecycle true
+83 silly exec cmd "/c" "./node_modules/grunt/lib/grunt serve"
+84 silly cmd,/c,./node_modules/grunt/lib/grunt serve,C:\app\junows\cs spawning
+85 info cspresentation@2.5.0 Failed to exec postinstall script
+86 error cspresentation@2.5.0 postinstall: `./node_modules/grunt/lib/grunt serve`
+86 error `cmd "/c" "./node_modules/grunt/lib/grunt serve"` failed with 1
+87 error Failed at the cspresentation@2.5.0 postinstall script.
+87 error This is most likely a problem with the cspresentation package,
+87 error not with npm itself.
+87 error Tell the author that this fails on your system:
+87 error     ./node_modules/grunt/lib/grunt serve
+87 error You can get their info via:
+87 error     npm owner ls cspresentation
+87 error There is likely additional logging output above.
+88 error System Windows_NT 6.1.7601
+89 error command "C:\\appDevelop\\backend\\node\\\\node.exe" "C:\\appDevelop\\backend\\node\\node_modules\\npm\\bin\\npm-cli.js" "install"
+90 error cwd C:\app\junows\cs
+91 error node -v v0.10.3
+92 error npm -v 1.2.17
+93 error code ELIFECYCLE
+94 verbose exit [ 1, true ]

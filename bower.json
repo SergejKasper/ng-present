@@ -1,0 +1,8 @@
+{
+  "name": "ng-reveal",
+  "version": "0.1.0",
+  "devDependencies": {
+    "angular": "~1.0.8"
+  },
+  "dependencies": {}
+}

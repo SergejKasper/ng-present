@@ -1,0 +1,55 @@
+<section>
+	<div style="margin-top: -300px;"><h2>Der Code</h2></div>
+	<section>
+	<pre><code contenteditable>
+&lt;section ng-controller="angularExcampleController"&gt;
+&lt;section&gt;
+	&lt;h2&gt;Einblick in die {{object}}&lt;h2&gt;
+	&lt;p&gt;
+	&lt;ul&gt;
+		&lt;li ng-repeat="feature in features" 
+		class="fragment highlight-blue"&gt;
+		{{feature.headline}}!
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/p&gt;
+	&lt;aside class="notes"&gt;
+		Zusatzinfos
+	&lt;/aside&gt;
+&lt;/section&gt;
+&lt;...&gt;
+	</code></pre>
+	</section>
+	<section>
+	<pre><code contenteditable>
+&lt;...&gt;
+&lt;section ng-repeat="feature in features"&gt;
+	&lt;h2>{{feature.headline}}&lt;/h2&gt;
+	&lt;div ng-repeat="img in feature.img"&gt;
+		&lt;img ng-src="{{img}}"&gt;&lt;/img&gt;
+	&lt;/div&gt;							
+	&lt;p&gt;{{feature.conclusion}}&lt;/p&gt;
+&lt;section&gt;
+	</code></pre>
+	</section>
+	</section>
+
+<section ng-controller="angularExcampleController2">
+	<h2>Das Prinzip in Action</h2>
+	<table>
+	<tr>
+	<td>Eingabe $scope.model:</td>
+	<td><input type="text" ng-model="model"></td>
+	</tr>
+	<tr>
+		<td>Ausgabe $scope.model: </td>
+		<td><input type="number" value="{{model}}" readonly></td>
+		
+	</tr>
+	<tr>
+		<td>Ausgabe $scope.modelAsBinary: </td>
+		<td><p ng-repeat="binary in modelAsBinary">{{binary}}</p></td>
+	</tr>
+	</table>  
+		
+</section>
