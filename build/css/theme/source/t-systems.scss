@@ -1,0 +1,75 @@
+/**
+ * Black theme for reveal.js.
+ * 
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: white;
+
+$mainFont: 'Open Sans', Times, 'Times New Roman', serif;
+$linkColor: #E20076;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Montserrat', Impact, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #E20076;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/** CUSTOM  **/
+
+.reveal .angular-logo {
+  margin-top: 40px;
+  float: right;
+}
+
+.reveal section img {
+	border: 0px;
+}
+
+.reveal li {
+	margin-top: 10px;
+}
+
+.reveal code {
+  font-size: 20px;
+}
+
+.reveal section h2 {
+	color: #E20076
+}
+
+.blackout .reveal .state-background {
+	background: rgba( 0,0,0,.7 );
+}
+
+.t-systems-logo {
+    bottom: 0px;
+    position: fixed;
+    left: 20px;
+    width: 90%;
+}
+
+.reveal blockquote {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bold;
+}

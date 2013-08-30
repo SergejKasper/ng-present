@@ -34,13 +34,13 @@ module.exports = function(grunt) {
                 header: 'header.html',
                 footer: 'footer.html',
                 src: ['slides/*.html'],
-                dest: '<%= build_dir%>/'  // destination *directory*, probably better than specifying same file names twice
+                dest: '<%= build_dir%>'  // destination *directory*, probably better than specifying same file names twice
             },
             mobile: {
                 header: 'header.html',
                 footer: 'footer.html',
                 src: ['slides/*.mobile.html'],
-                dest: '.'  // destination *directory*, probably better than specifying same file names twice
+                dest: '<%= build_dir%>'  // destination *directory*, probably better than specifying same file names twice
             }
         },
 
