@@ -1,6 +1,6 @@
 <section>
 	<section>
-		<h3>Wie binde ich Angular JS ein</h3>
+		<h3>Wie binde ich AngularJS ein?</h3>
 		<pre>
 		<code>
 		&lt;body ng-app&gt;
@@ -21,7 +21,7 @@
 		</pre>
 	</section>
 	<section>
-		<h3>Wie erstelle ich einen eigenen Tag?</h3> 
+		<h3>Wie erstelle ich einen eigenen HTML Tag?</h3> 
 		<div class="switch">
 			<input ng-model="showMe" type="checkbox">
 			<label><i></i></label>
@@ -43,30 +43,16 @@
 		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
 		<pre>
 		<code>
-			angular.directive('ngShow', [function () {
-				return {
-					restrict: 'A',
-					link: function (scope, element, attr) {
-						scope.$watch(attr.ngShow, function ngShowWatchAction(value){
-							element.css('display', toBoolean(value) ? '' : 'none');
-						});
-					}
-				};
-			}]);
-		</code>
-		</pre>
-	</section>
-	<section>
-		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
-		<pre>
-		<code>
-var ngShowDirective = ngDirective(function(scope, element, attr){
-		
-		scope.$watch(attr.ngShow, function ngShowWatchAction(value){
-			element.css('display', toBoolean(value) ? '' : 'none');
-		});
-
-});
+angular.directive('ngShow', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			scope.$watch(attr.ngShow, function ngShowWatchAction(value){
+				element.css('display', toBoolean(value) ? '' : 'none');
+			});
+		}
+	};
+}]);
 		</code>
 		</pre>
 	</section>

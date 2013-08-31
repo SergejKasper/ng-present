@@ -33,8 +33,99 @@
 	<script src="lib/bower_components/angular/angular.min.js"></script>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.min.js"></script>
+	<script src="js/ng-google-chart.js"></script>
 	<script>
-		angular.module('revealAngular', [])
+		angular.module('revealAngular', ['googlechart'])
+		.controller('ChartCtrl', ['$scope', function ($scope) {
+			$scope.chart = {
+  "type": "ColumnChart",
+  "displayed": true,
+  "cssStyle": "height:600px; width:100%;",
+  "data": {
+    "cols": [
+      {
+        "id": "store",
+        "label": "Store",
+        "type": "string"
+      },
+      {
+        "id": "anzahl",
+        "label": "Anzahl",
+        "type": "number"
+      }
+    ],
+    "rows": [
+      {
+        "c": [
+          {
+            "v": "Apple App Store"
+          },
+          {
+            "v": 900000,
+            "f": "Anzahl"
+          }
+        ]
+      },
+       {
+        "c": [
+          {
+            "v": "Google Play"
+          },
+          {
+            "v": 850000,
+            "f": "Anzahl"
+          }
+        ]
+      },      
+      {
+        "c": [
+          {
+            "v": "Windows Phone Store"
+          },
+          {
+            "v": 145000,
+            "f": "Anzahl"
+          }
+        ]
+      },
+      {
+        "c": [
+          {
+            "v": "Blackbarry World"
+          },
+          {
+            "v": 120000,
+            "f": "Anzahl"
+          }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Anzahl angebotener Apps in den Top App-Stores",
+    "isStacked": "true",
+    "fill": 20,
+    "displayExactValues": true,
+    "colors":["#D20065","#E20055","#D20065","#E20055"],
+    "backgroundColor":{
+    	"fill" : "cdcecf",
+    	"stroke" : "#D20065"
+    },
+    "fontSize": 20,
+    "fontName": "Montserrat",
+    "vAxis": {
+      "title": "Sales unit",
+      "gridlines": {
+        "count": 10
+      }
+    },
+    "hAxis": {
+      "title": "App-Stores"
+    }
+  }
+}
+		}])
+
 			.controller('angularExcampleController', ['$scope', function ($scope) {
 				$scope.object ="Kernfeatures";
 				$scope.features = 
@@ -125,6 +216,10 @@
 		<li>PhoneGap Build</li>
 		<li>Fazit</li>
 	</ol>
+</section>
+<section ng-controller="ChartCtrl">
+<div google-chart chart="chart" style="{{chart.cssStyle}}">
+</div>
 </section><section>
 	<h2>Hybride App Architektur</h2>
 	<img style="width:800px;" ng-src="img/hybridApp.png"/>
@@ -248,17 +343,17 @@ Show Favorite Numbers: &lt;input ng-model="ShowFaveNumbers" type="checkbox"&gt;
 	<blockquote>Angular is what the web browser would have been, had it been designed for applications.</blockquote>
 	<p>Misko Hevery (Creator of AngularJS)</p>
 </section><section>
-	<h2>Warum Angular?</h2>
+	<h2>Warum AngularJS?</h2>
 	<ul>
-		<li>Nach Initialer Einarbeitung beschleunigt Angular die Appentwicklung reasant</li>
+		<li>Nach initialer Einarbeitung beschleunigt AngularJS die Appentwicklung rasant</li>
 		<ul>
-		<li>Eigene HTML Tags sorgen für leichte Wiederverwendbarkeit von Code</li>
-		<li>Vom Framework und Extensions bereitgestellte HTML Tags decken viele Use Cases ab.</li>
-		<li>Angular ist leicht testbar</li>
+			<li>Eigene HTML Tags sorgen für leichte Wiederverwendbarkeit von Code </li>
+			<li>Vom Framework und Extensions bereitgestellte HTML Tags decken viele Use Cases ab</li>
+			<li>AngularJS ist leicht testbar</li>
 		</ul>
-		<li>Angular bietet eine klare Unterteilung der Anwendung nach dem MVC Pattern</li>
+		<li>AngularJS bietet eine klare Unterteilung der Anwendung nach dem MVC Pattern</li>
 		<li>Umfangreiche Doku und guter Support</li>
-		<li>Einfache Integration mit anderen libraries.</li>
+		<li>Einfache Integration mit Javascript Bibliotheken</li>
 	</ul>
 </section>
 <section>
@@ -275,14 +370,14 @@ Show Favorite Numbers: &lt;input ng-model="ShowFaveNumbers" type="checkbox"&gt;
 		<li>REST Client</li>
 	</ol>
 </section>
-<section>
+<!--section>
 
 	<h2>Interesse an Angular</h2>
 	<p><script type="text/html" src="http://www.google.de/trends/embed.js?hl=de&q=angularjs+%2B+angular.js,+emberjs+%2B+ember.js,+backbonejs+%2B+backbone.js,+knockoutjs+%2B+knockout.jsr&date=1/2011+33m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=600"></script></p>
-</section>
+</section-->
                 <section>
 	<section>
-		<h3>Wie binde ich Angular JS ein</h3>
+		<h3>Wie binde ich AngularJS ein?</h3>
 		<pre>
 		<code>
 		&lt;body ng-app&gt;
@@ -303,7 +398,7 @@ Show Favorite Numbers: &lt;input ng-model="ShowFaveNumbers" type="checkbox"&gt;
 		</pre>
 	</section>
 	<section>
-		<h3>Wie erstelle ich einen eigenen Tag?</h3> 
+		<h3>Wie erstelle ich einen eigenen HTML Tag?</h3> 
 		<div class="switch">
 			<input ng-model="showMe" type="checkbox">
 			<label><i></i></label>
@@ -325,30 +420,16 @@ Show Favorite Numbers: &lt;input ng-model="ShowFaveNumbers" type="checkbox"&gt;
 		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
 		<pre>
 		<code>
-			angular.directive('ngShow', [function () {
-				return {
-					restrict: 'A',
-					link: function (scope, element, attr) {
-						scope.$watch(attr.ngShow, function ngShowWatchAction(value){
-							element.css('display', toBoolean(value) ? '' : 'none');
-						});
-					}
-				};
-			}]);
-		</code>
-		</pre>
-	</section>
-	<section>
-		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
-		<pre>
-		<code>
-var ngShowDirective = ngDirective(function(scope, element, attr){
-		
-		scope.$watch(attr.ngShow, function ngShowWatchAction(value){
-			element.css('display', toBoolean(value) ? '' : 'none');
-		});
-
-});
+angular.directive('ngShow', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			scope.$watch(attr.ngShow, function ngShowWatchAction(value){
+				element.css('display', toBoolean(value) ? '' : 'none');
+			});
+		}
+	};
+}]);
 		</code>
 		</pre>
 	</section>
@@ -449,13 +530,12 @@ var ngShowDirective = ngDirective(function(scope, element, attr){
 	</table>  
 		
 </section-->
-
-				<section>
+                <section>
 					<h2>PhoneGap</h2>
                     <ul>
 						<li>Open-Source-Framework</li>
 						<li>Apps für <a href="http://docs.phonegap.com/en/edge/guide_overview_index.md.html#Overview">zehn verschiedene Plattformen</a> entwickeln (iOS, Android, Blackberry…)</li>
-						<li>Bietet zusätzliche Schnittstellen, um Geräte-Hardware wie Kamera oder GPS-Sensor einzubinden</li>
+						<li>Bietet Schnittstellen für Geräte-Hardware wie Kamera oder GPS</li>
 					</ul>
                     
                     <aside class="notes">
@@ -474,7 +554,7 @@ Anschließend kompiliert es alles und stellt Installationsdateien für die versc
 				<section>
 					<h2>PhoneGap einrichten</h2>
 					<ul>
-						<li> Über die Komandozeile  (<a href="http://nodejs.org/">NodeJS</a> vorausgesetzt):</li>
+						<li>Über die Komandozeile (<a href="http://nodejs.org/">NodeJS</a> vorausgesetzt):</li>
 					</ul>
 					   <pre><code contenteditable>
                         npm install -g phonegap
@@ -490,10 +570,11 @@ Anschließend kompiliert es alles und stellt Installationsdateien für die versc
                             <li>Anlegen eines neuen Projektes:</li>
                         </ul>
                            <pre><code contenteditable>
-phonegap create meineErsteApp --name "meineErsteApp" --id "de.mms.meineErsteApp"
+phonegap create meineErsteApp --name "meineErsteApp" 
+--id "de.mms.meineErsteApp"
                                 </code></pre>
                         <ul> 
-                            <li>Umwandulung der Web-App für die jeweilige Plattform:</li>
+                            <li>Umwandlung der Web-App für die jeweilige Plattform:</li>
                         </ul>
                         <pre><code contenteditable>
                             phonegap run android
@@ -557,8 +638,8 @@ src="phonegap.js"&gt; &lt;/script&gt;
 				<section>
 					<h2>PhoneGap Anwendung konfigurieren</h2>
 					    <ul>
-                            <li>Mit Hilfe einer config.xml Datei können: Name, Kodierung, Rechte, Icons etc. spezifiziert werden.</li>
-                            <li>Dafür muss sich config.xml im Rootverzeichnis befinden.</li>
+                            <li>Mit Hilfe einer config.xml Datei können: Name, Kodierung, Rechte, Icons etc. spezifiziert werden</li>
+                            <li>Dafür muss sich config.xml im Rootverzeichnis befinden</li>
                         </ul>
 				</section>
 				<section> 
@@ -607,7 +688,7 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 				<section> 
 					<h2>Access Element</h2>
 <ul>
-     <li>Erlaubt den Zugriff auf Ressourcen anderer Domains.</li>
+     <li>Erlaubt den Zugriff auf Ressourcen anderer Domains</li>
 </ul>
 <pre><code>&lt;!-- erlaubt lokale Seiten --&gt;
 &lt;access origin="http://127.0.0.1*"/&gt; 
@@ -617,7 +698,8 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 &lt;access origin="*" /&gt;
 </code></pre>
 				    </section>
-				</section>
+				</section> 
+
 				<section>
 				<section>
 					<h2>Ripple Emulator</h2>
@@ -627,9 +709,9 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 					<h2>Ripple Emulator</h2>
                     <ul>
 						<li><a href="https://chrome.google.com/webstore/search/ripple%20emulator?hl=de&utm_source=chrome-ntp-launcher">Google Chrome Erweiterung</a></li>
-						<li>Emulator für multi-Plattformen mobiler Umgebungen</li>
-						<li>Für Entwicklung und Testung von Web/Hybrid-Apps geeignet
-PhoneGap integriert</li>
+						<li>Emuliert mobile Umgebungen</li>
+						<li>Erleichtert die Entwicklung und Testung von Web/Hybrid-Apps geeignet</li>
+                        <li>PhoneGap integriert</li>
 					</ul>
                     
                 <aside class="notes">
@@ -653,7 +735,7 @@ PhoneGap ist in dem Emulator integriert kann so kann simuliert werden wie PhoneG
 					<ul>
 						<li>Cloudservice</li>
 						<li>Kompiliert Quellcode in native Anwendungen</li>
-						<li>Konfigurierung der App für die jeweilige Zielplattform</li>
+						<li>Konfiguriert die App für die jeweilige Zielplattform</li>
 					</ul>
 				</section>
 

@@ -1,0 +1,81 @@
+<section>
+	<section>
+		<p><h3>Angular macht HTML erweiterbar</h3></p>
+		<h4>Ist das cool?</h4> 
+		<div class="switch">
+			<input ng-model="ShowFaveNumbers" type="checkbox">
+			<label><i></i></label>
+		</div>
+		<p ng-show="ShowFaveNumbers">
+		    <b>Auf jeden Fall!</b>
+		</p>
+	</section>
+	<section>
+		<p><h3>Angular macht HTML erweiterbar (JQuery Code)</h3></p>
+		<pre>
+		<code>
+Show Favorite Numbers: &lt;input id="ShowFaveNumbers" type="checkbox"&gt;
+&lt;b id="FaveNumbers"&gt; Auf jeden Fall!&lt;/b&gt;
+		</code>
+		</pre>
+		<pre>
+		<code>
+$(function() {
+        function showOrHide() {
+            var isChecked = $('#ShowFaveNumbers').is(':checked');
+            
+            // imperative Code dependency
+            var fn = $('#FaveNumbers');
+            if (isChecked)
+                fn.show();
+            else
+                fn.hide();
+        }
+        $('#ShowFaveNumbers').change(function() {
+            showOrHide();
+        });
+        showOrHide();
+});
+		</code>
+		</pre>
+	</section>
+	<section>
+		<p><h3>Angular macht HTML erweiterbar (Angular Code)</h3></p>
+		<pre>
+		<code>
+Show Favorite Numbers: &lt;input ng-model="ShowFaveNumbers" type="checkbox"&gt;
+&lt;b ng-show="ShowFaveNumbers"&gt; Auf jeden Fall!&lt;/b&gt;
+		</code>
+		</pre>
+	</section>
+</section>
+<section>
+	<p><h3>Angular bietet ein two-way binding</h3></p>
+	<h4>Ist das auch cool?</h4> 
+	<div class="switch">
+		<input ng-model="ShowFaveNumbers" type="checkbox">
+		<label><i></i></label>
+	</div>
+	<p ng-show="ShowFaveNumbers">
+	    <b>Aber sowas von!</b>
+	</p>
+</section>
+<section>
+	<li>Und wenn auch noch ein MVC Framework ist?</li>
+	<pre><code>
+	&lt;input type="text" ng-model="model"&gt;
+	Das Coden {{emphaticModel}}
+	&lt;script&gt;
+		myController function($scope){
+		$scope.model = "kann beginnen";
+		$scope.emphaticModel = $scope.model + "!!!";
+		}
+	&lt;/script&gt;
+	</code></pre>
+	<input type="text" ng-model="model">
+	Das Coden {{emphaticModel}}
+</section>
+<section>
+	<blockquote>Angular is what the web browser would have been, had it been designed for applications.</blockquote>
+	<p>Misko Hevery (Creator of AngularJS)</p>
+</section>

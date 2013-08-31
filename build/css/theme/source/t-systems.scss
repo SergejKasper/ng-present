@@ -1,8 +1,8 @@
 /**
- * Black theme for reveal.js.
- * 
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
- */
+* Black theme for reveal.js.
+* 
+* Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+*/
 
 
 // Default mixins and settings -----------------
@@ -37,48 +37,48 @@ $mainFontSize: 30px;
 /** CUSTOM  **/
 
 .reveal .angular-logo {
-  margin-top: 40px;
-  float: right;
+margin-top: 40px;
+float: right;
 }
 
 .reveal section img {
-	border: 0px;
+border: 0px;
 }
 
 .reveal li {
-	margin-top: 10px;
+margin-top: 10px;
 }
 
 .reveal code {
-  font-size: 20px;
+font-size: 20px;
 }
 
 .reveal section h2 {
-	color: #E20076
+color: #E20076
 }
 
 .blackout .reveal .state-background {
-	background: rgba( 0,0,0,.7 );
+background: rgba( 0,0,0,.7 );
 }
 
 .t-systems-logo {
-    bottom: 0px;
-    position: fixed;
-    left: 20px;
-    width: 90%;
+bottom: 0px;
+position: fixed;
+left: 20px;
+width: 90%;
 }
 
 .reveal blockquote {
-  font-size: 2em;
-  line-height: 1em;
-  font-weight: bold;
+font-size: 2em;
+line-height: 1em;
+font-weight: bold;
 }
 
 input[type="checkbox"]{
- 	width: 50px;
- 	height: 50px;
- }
+width: 50px;
+height: 50px;
+}
 
- input[type="checkbox"]:checked{
- 	background-color: #E20076;
- }
+input[type="checkbox"]:checked{
+background-color: #E20076;
+}

@@ -33,8 +33,99 @@
 	<script src="lib/bower_components/angular/angular.min.js"></script>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.min.js"></script>
+	<script src="js/ng-google-chart.js"></script>
 	<script>
-		angular.module('revealAngular', [])
+		angular.module('revealAngular', ['googlechart'])
+		.controller('ChartCtrl', ['$scope', function ($scope) {
+			$scope.chart = {
+  "type": "ColumnChart",
+  "displayed": true,
+  "cssStyle": "height:600px; width:100%;",
+  "data": {
+    "cols": [
+      {
+        "id": "store",
+        "label": "Store",
+        "type": "string"
+      },
+      {
+        "id": "anzahl",
+        "label": "Anzahl",
+        "type": "number"
+      }
+    ],
+    "rows": [
+      {
+        "c": [
+          {
+            "v": "Apple App Store"
+          },
+          {
+            "v": 900000,
+            "f": "Anzahl"
+          }
+        ]
+      },
+       {
+        "c": [
+          {
+            "v": "Google Play"
+          },
+          {
+            "v": 850000,
+            "f": "Anzahl"
+          }
+        ]
+      },      
+      {
+        "c": [
+          {
+            "v": "Windows Phone Store"
+          },
+          {
+            "v": 145000,
+            "f": "Anzahl"
+          }
+        ]
+      },
+      {
+        "c": [
+          {
+            "v": "Blackbarry World"
+          },
+          {
+            "v": 120000,
+            "f": "Anzahl"
+          }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Anzahl angebotener Apps in den Top App-Stores",
+    "isStacked": "true",
+    "fill": 20,
+    "displayExactValues": true,
+    "colors":["#D20065","#E20055","#D20065","#E20055"],
+    "backgroundColor":{
+    	"fill" : "cdcecf",
+    	"stroke" : "#D20065"
+    },
+    "fontSize": 20,
+    "fontName": "Montserrat",
+    "vAxis": {
+      "title": "Sales unit",
+      "gridlines": {
+        "count": 10
+      }
+    },
+    "hAxis": {
+      "title": "App-Stores"
+    }
+  }
+}
+		}])
+
 			.controller('angularExcampleController', ['$scope', function ($scope) {
 				$scope.object ="Kernfeatures";
 				$scope.features = 

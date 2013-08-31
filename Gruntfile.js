@@ -166,7 +166,6 @@ module.exports = function(grunt) {
                 latedef: true,
                 newcap: true,
                 noarg: true,
-                smarttabs: true,
                 sub: true,
                 undef: true,
                 eqnull: true,
@@ -203,7 +202,7 @@ module.exports = function(grunt) {
 
         watch: {
             main: {
-                files: ['Gruntfile.js', 'js/**', 'lib/**', 'images/**', 'plugin/**', 'slides/**'],
+                files: ['header.html', 'footer.html', 'Gruntfile.js', 'js/**', 'lib/**', 'images/**', 'plugin/**', 'slides/**'],
                 tasks: 'update',
                 options: {
                     livereload: true

@@ -1,10 +1,9 @@
-
-				<section>
+                <section>
 					<h2>PhoneGap</h2>
                     <ul>
 						<li>Open-Source-Framework</li>
 						<li>Apps für <a href="http://docs.phonegap.com/en/edge/guide_overview_index.md.html#Overview">zehn verschiedene Plattformen</a> entwickeln (iOS, Android, Blackberry…)</li>
-						<li>Bietet zusätzliche Schnittstellen, um Geräte-Hardware wie Kamera oder GPS-Sensor einzubinden</li>
+						<li>Bietet Schnittstellen für Geräte-Hardware wie Kamera oder GPS</li>
 					</ul>
                     
                     <aside class="notes">
@@ -23,7 +22,7 @@ Anschließend kompiliert es alles und stellt Installationsdateien für die versc
 				<section>
 					<h2>PhoneGap einrichten</h2>
 					<ul>
-						<li> Über die Komandozeile  (<a href="http://nodejs.org/">NodeJS</a> vorausgesetzt):</li>
+						<li>Über die Komandozeile (<a href="http://nodejs.org/">NodeJS</a> vorausgesetzt):</li>
 					</ul>
 					   <pre><code contenteditable>
                         npm install -g phonegap
@@ -39,10 +38,11 @@ Anschließend kompiliert es alles und stellt Installationsdateien für die versc
                             <li>Anlegen eines neuen Projektes:</li>
                         </ul>
                            <pre><code contenteditable>
-phonegap create meineErsteApp --name "meineErsteApp" --id "de.mms.meineErsteApp"
+phonegap create meineErsteApp --name "meineErsteApp" 
+--id "de.mms.meineErsteApp"
                                 </code></pre>
                         <ul> 
-                            <li>Umwandulung der Web-App für die jeweilige Plattform:</li>
+                            <li>Umwandlung der Web-App für die jeweilige Plattform:</li>
                         </ul>
                         <pre><code contenteditable>
                             phonegap run android
@@ -106,8 +106,8 @@ src="phonegap.js"&gt; &lt;/script&gt;
 				<section>
 					<h2>PhoneGap Anwendung konfigurieren</h2>
 					    <ul>
-                            <li>Mit Hilfe einer config.xml Datei können: Name, Kodierung, Rechte, Icons etc. spezifiziert werden.</li>
-                            <li>Dafür muss sich config.xml im Rootverzeichnis befinden.</li>
+                            <li>Mit Hilfe einer config.xml Datei können: Name, Kodierung, Rechte, Icons etc. spezifiziert werden</li>
+                            <li>Dafür muss sich config.xml im Rootverzeichnis befinden</li>
                         </ul>
 				</section>
 				<section> 
@@ -156,7 +156,7 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 				<section> 
 					<h2>Access Element</h2>
 <ul>
-     <li>Erlaubt den Zugriff auf Ressourcen anderer Domains.</li>
+     <li>Erlaubt den Zugriff auf Ressourcen anderer Domains</li>
 </ul>
 <pre><code>&lt;!-- erlaubt lokale Seiten --&gt;
 &lt;access origin="http://127.0.0.1*"/&gt; 
@@ -166,7 +166,8 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 &lt;access origin="*" /&gt;
 </code></pre>
 				    </section>
-				</section>
+				</section> 
+
 				<section>
 				<section>
 					<h2>Ripple Emulator</h2>
@@ -176,9 +177,9 @@ werden, dann kann die folgende Zeile angebeben werden: -->
 					<h2>Ripple Emulator</h2>
                     <ul>
 						<li><a href="https://chrome.google.com/webstore/search/ripple%20emulator?hl=de&utm_source=chrome-ntp-launcher">Google Chrome Erweiterung</a></li>
-						<li>Emulator für multi-Plattformen mobiler Umgebungen</li>
-						<li>Für Entwicklung und Testung von Web/Hybrid-Apps geeignet
-PhoneGap integriert</li>
+						<li>Emuliert mobile Umgebungen</li>
+						<li>Erleichtert die Entwicklung und Testung von Web/Hybrid-Apps geeignet</li>
+                        <li>PhoneGap integriert</li>
 					</ul>
                     
                 <aside class="notes">
@@ -202,7 +203,7 @@ PhoneGap ist in dem Emulator integriert kann so kann simuliert werden wie PhoneG
 					<ul>
 						<li>Cloudservice</li>
 						<li>Kompiliert Quellcode in native Anwendungen</li>
-						<li>Konfigurierung der App für die jeweilige Zielplattform</li>
+						<li>Konfiguriert die App für die jeweilige Zielplattform</li>
 					</ul>
 				</section>
 
