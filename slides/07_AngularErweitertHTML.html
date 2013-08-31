@@ -1,0 +1,95 @@
+<section>
+	<section>
+		<h3>Wie binde ich Angular JS ein</h3>
+		<pre>
+		<code>
+		&lt;body ng-app&gt;
+			&lt;input type="text" ng-model="model"&gt;
+			Das Coden {{emphaticModel}}
+			<!-- Wenn jQuery für Plugins benötigt wird, vor Angular laden -->
+			&lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+			<!-- Angular hat keine Externen Abhängigkeiten -->
+			&lt;script src="angular.min.js"&gt;&lt;/script&gt;
+			&lt;script&gt;
+				myController function($scope){
+				$scope.model = "kann beginnen";
+				$scope.emphaticModel = $scope.model + "!!!";
+				}
+			&lt;/script&gt;
+		&lt;/body&gt;
+		</code>
+		</pre>
+	</section>
+	<section>
+		<h3>Wie erstelle ich einen eigenen Tag?</h3> 
+		<div class="switch">
+			<input ng-model="showMe" type="checkbox">
+			<label><i></i></label>
+		</div>
+		<div ng-show="showMe">
+		<pre><code>
+		&lt;h3&gt;Wie erstelle ich einen eigenen Tag?&lt;/h3&gt; 
+		&lt;div class="switch"&gt;
+			&lt;input ng-model="showMe" type="checkbox"&gt;
+			&lt;label&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div ng-show="showMe"&gt;
+		    &lt;pre&gt;&lt;code&gt;/*Dieses Snippet*/&lt;/code&gt;&lt;/pre&gt;
+		&lt;/div&gt;
+		</code></pre>
+		</div>
+	</section>
+	<section>
+		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
+		<pre>
+		<code>
+			angular.directive('ngShow', [function () {
+				return {
+					restrict: 'A',
+					link: function (scope, element, attr) {
+						scope.$watch(attr.ngShow, function ngShowWatchAction(value){
+							element.css('display', toBoolean(value) ? '' : 'none');
+						});
+					}
+				};
+			}]);
+		</code>
+		</pre>
+	</section>
+	<section>
+		<p><h3>ngShow ein neugeborenes HTML Element</h3><p/>
+		<pre>
+		<code>
+var ngShowDirective = ngDirective(function(scope, element, attr){
+		
+		scope.$watch(attr.ngShow, function ngShowWatchAction(value){
+			element.css('display', toBoolean(value) ? '' : 'none');
+		});
+
+});
+		</code>
+		</pre>
+	</section>
+</section>
+<!--section>
+		<h2>Angular befähigt den Browser neues HTML zu verstehen!</h2>
+		<p>
+			-> Funktionalität an Tag binden (Directives)
+			-> Funktionalität an beliebiger Stelle im HTML deklarieren!
+		</p>
+		<pre>						
+		<code>
+&lt;!doctype html&gt;
+&lt;html ng-app=&quot;optionalModuleName&quot;&gt;
+	&lt;body&gt;
+		&amp;lt;alert type="error"&amp;gt;Heyo!&amp;lt;/alert&amp;gt;
+		&lt;script src=&quot;angular.js&quot;&gt;&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+		</code>
+		</pre>
+</section-->
+<section>
+	<blockquote>Pretty sure that HTML6 is going under the codename @angularjs!</blockquote>
+	<p>Some tweet at Twitter</p>
+</section>	

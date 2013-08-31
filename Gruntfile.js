@@ -153,14 +153,7 @@ module.exports = function(grunt) {
         sass: {
             main: {
                 files: {
-                    'css/theme/default.css': 'css/theme/source/default.scss',
-                    'css/theme/beige.css': 'css/theme/source/beige.scss',
-                    'css/theme/night.css': 'css/theme/source/night.scss',
-                    'css/theme/serif.css': 'css/theme/source/serif.scss',
-                    'css/theme/simple.css': 'css/theme/source/simple.scss',
-                    'css/theme/sky.css': 'css/theme/source/sky.scss',
-                    'css/theme/moon.css': 'css/theme/source/moon.scss',
-                    'css/theme/solarized.css': 'css/theme/source/solarized.scss'
+                	'css/theme/t-systems.css': 'css/theme/source/t-systems.scss'
                 }
             }
         },
@@ -173,6 +166,7 @@ module.exports = function(grunt) {
                 latedef: true,
                 newcap: true,
                 noarg: true,
+                smarttabs: true,
                 sub: true,
                 undef: true,
                 eqnull: true,
@@ -210,7 +204,7 @@ module.exports = function(grunt) {
         watch: {
             main: {
                 files: ['Gruntfile.js', 'js/**', 'lib/**', 'images/**', 'plugin/**', 'slides/**'],
-                tasks: 'default',
+                tasks: 'update',
                 options: {
                     livereload: true
                 }
@@ -248,7 +242,7 @@ module.exports = function(grunt) {
     grunt.registerTask('package', ['default', 'zip']);
 
     // Serve presentation locally
-    grunt.registerTask('update', ['wrap:html', 'clean', 'copy', 'connect', 'watch']);
+    grunt.registerTask('update', ['clean', 'wrap:html', 'copy', 'watch']);
 
     // Serve presentation locally
     grunt.registerTask('serve', [ 'default','connect', 'watch']);

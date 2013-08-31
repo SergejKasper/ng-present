@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/t-systems.css" id="theme">
+		<link rel="alternate" href="css/bootstrap.min.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -89,14 +90,21 @@
 				};
 			}]);
 		</script>
+		<!--script src="js/bootstrap.min.js" type="text/javascript"></script-->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.5.0/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
 				<script type="text/javascript" charset="utf-8" src="cordova-2.9.0.js"></script>
 	</head>
 
 	<body reveal>
+		<div class="reveal">
 		<div class="t-systems-logo">
 			<img src="css/images/t-systems.png">
 		</div>
-		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+			<script>
+			function myController($scope){
+				$scope.model = "kann beginnen";
+				$scope.emphaticModel = $scope.model + "!!!";
+			}
+			</script>
+			<div class="slides" ng-controller="myController">
